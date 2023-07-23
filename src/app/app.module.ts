@@ -10,16 +10,27 @@ import {MatInputModule} from "@angular/material/input";
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatSelectModule} from "@angular/material/select";
 import {MatButtonModule} from "@angular/material/button";
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
-import {NgxsFormPluginModule} from "@ngxs/form-plugin";
 import {NgxsModule} from "@ngxs/store";
 import {MatNativeDateModule} from "@angular/material/core";
+import { InputFieldComponent } from './atoms/input-field/input-field.component';
+import { ButtonComponent } from './atoms/button/button.component';
+import { LoginFormComponent } from './molecules/login-form/login-form.component';
+import { LoginPageComponent } from './organisms/login-page/login-page.component';
+import {AuthState} from "./auth.state";
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    NgxsFormComponent
+    NgxsFormComponent,
+    InputFieldComponent,
+    ButtonComponent,
+    LoginFormComponent,
+    LoginPageComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -33,8 +44,9 @@ import {MatNativeDateModule} from "@angular/material/core";
     MatButtonModule,
     ReactiveFormsModule,
     HttpClientModule,
-    NgxsFormPluginModule,
-    NgxsModule.forRoot([]), NgxsFormPluginModule.forRoot()
+    NgxsModule.forRoot([AuthState]),
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
