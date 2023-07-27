@@ -1,0 +1,16 @@
+.title{
+  color: darkred;
+}
+
+
+@media (orientation: landscape) and (max-width: 300px){
+  .title {
+    color: greenyellow;
+  }
+}
+
+@media (orientation: portrait){
+  .subtitle{
+    color: cyan;
+  }
+}

@@ -14,11 +14,12 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {NgxsModule} from "@ngxs/store";
 import {MatNativeDateModule} from "@angular/material/core";
-import { InputFieldComponent } from './atoms/input-field/input-field.component';
-import { ButtonComponent } from './atoms/button/button.component';
-import { LoginFormComponent } from './molecules/login-form/login-form.component';
-import { LoginPageComponent } from './organisms/login-page/login-page.component';
-import {AuthState} from "./auth.state";
+import { InputFieldComponent } from './atomic-design/atoms/input-field/input-field.component';
+import { ButtonComponent } from './atomic-design/atoms/button/button.component';
+import { LoginFormComponent } from './atomic-design/molecules/login-form/login-form.component';
+import { LoginPageComponent } from './atomic-design/organisms/login-page/login-page.component';
+import {AuthState} from "./atomic-design/auth.state";
+import { MediaQueryComponent } from './media-query/media-query.component';
 
 
 
@@ -30,6 +31,7 @@ import {AuthState} from "./auth.state";
     ButtonComponent,
     LoginFormComponent,
     LoginPageComponent,
+    MediaQueryComponent,
 
   ],
   imports: [
