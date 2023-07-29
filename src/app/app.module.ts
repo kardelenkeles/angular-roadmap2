@@ -20,6 +20,7 @@ import { LoginFormComponent } from './atomic-design/molecules/login-form/login-f
 import { LoginPageComponent } from './atomic-design/organisms/login-page/login-page.component';
 import {AuthState} from "./atomic-design/auth.state";
 import { MediaQueryComponent } from './media-query/media-query.component';
+import { ProductComponent } from './product/product.component';
 
 
 
@@ -32,6 +33,7 @@ import { MediaQueryComponent } from './media-query/media-query.component';
     LoginFormComponent,
     LoginPageComponent,
     MediaQueryComponent,
+    ProductComponent,
 
   ],
   imports: [
