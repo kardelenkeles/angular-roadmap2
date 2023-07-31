@@ -28,6 +28,9 @@ import { FilterPipe } from './data-set/filter.pipe';
 import { DatatableComponent } from './datatable/datatable.component';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { DataTablesModule } from 'angular-datatables';
+import { AlterBackgroundDirective } from './alter-background/alter-background.directive';
+import { AlterBackgroundComponent } from './alter-background/alter-background.component';
+import { AlterBackgroundHandlerDirective } from './alter-background/alterBackgroundHandler.directive';
 
 
 
@@ -45,6 +48,9 @@ import { DataTablesModule } from 'angular-datatables';
     PercentagePipe,
     FilterPipe,
     DatatableComponent,
+    AlterBackgroundDirective,
+    AlterBackgroundComponent,
+    AlterBackgroundHandlerDirective
 
 
   ],
