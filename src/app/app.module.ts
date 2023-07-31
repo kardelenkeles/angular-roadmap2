@@ -21,12 +21,13 @@ import { LoginPageComponent } from './atomic-design/organisms/login-page/login-p
 import {AuthState} from "./atomic-design/auth.state";
 import { MediaQueryComponent } from './media-query/media-query.component';
 import { ProductComponent } from './product/product.component';
-import { CommonModule, PercentPipe } from '@angular/common';
+import { CommonModule, CurrencyPipe, PercentPipe, UpperCasePipe } from '@angular/common';
 import { DataSetComponent } from './data-set/data-set.component';
 import { PercentagePipe } from './data-set/percentage.pipe';
 import { FilterPipe } from './data-set/filter.pipe';
-
-
+import { DatatableComponent } from './datatable/datatable.component';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { DataTablesModule } from 'angular-datatables';
 
 
 
@@ -42,7 +43,9 @@ import { FilterPipe } from './data-set/filter.pipe';
     ProductComponent,
     DataSetComponent,
     PercentagePipe,
-    FilterPipe
+    FilterPipe,
+    DatatableComponent,
+
 
   ],
   imports: [
@@ -59,10 +62,14 @@ import { FilterPipe } from './data-set/filter.pipe';
     ReactiveFormsModule,
     HttpClientModule,
     NgxsModule.forRoot([AuthState]),
-    FormsModule
+    FormsModule,
+    NgxDatatableModule,
+    DataTablesModule,
+   
 
   ],
-  providers: [],
+  providers: [    UpperCasePipe,
+    CurrencyPipe, HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
