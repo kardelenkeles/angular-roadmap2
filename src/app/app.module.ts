@@ -11,7 +11,7 @@ import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatSelectModule} from "@angular/material/select";
 import {MatButtonModule} from "@angular/material/button";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {HttpClientModule} from "@angular/common/http";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {NgxsModule} from "@ngxs/store";
 import {MatNativeDateModule} from "@angular/material/core";
 import { InputFieldComponent } from './atomic-design/atoms/input-field/input-field.component';
@@ -21,6 +21,12 @@ import { LoginPageComponent } from './atomic-design/organisms/login-page/login-p
 import {AuthState} from "./atomic-design/auth.state";
 import { MediaQueryComponent } from './media-query/media-query.component';
 import { ProductComponent } from './product/product.component';
+import { CommonModule, PercentPipe } from '@angular/common';
+import { DataSetComponent } from './data-set/data-set.component';
+import { PercentagePipe } from './data-set/percentage.pipe';
+import { FilterPipe } from './data-set/filter.pipe';
+
+
 
 
 
@@ -34,9 +40,13 @@ import { ProductComponent } from './product/product.component';
     LoginPageComponent,
     MediaQueryComponent,
     ProductComponent,
+    DataSetComponent,
+    PercentagePipe,
+    FilterPipe
 
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatCardModule,
