@@ -31,6 +31,7 @@ import { DataTablesModule } from 'angular-datatables';
 import { AlterBackgroundDirective } from './alter-background/alter-background.directive';
 import { AlterBackgroundComponent } from './alter-background/alter-background.component';
 import { AlterBackgroundHandlerDirective } from './alter-background/alterBackgroundHandler.directive';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 
@@ -50,7 +51,8 @@ import { AlterBackgroundHandlerDirective } from './alter-background/alterBackgro
     DatatableComponent,
     AlterBackgroundDirective,
     AlterBackgroundComponent,
-    AlterBackgroundHandlerDirective
+    AlterBackgroundHandlerDirective,
+    RxjsComponent
 
 
   ],
