@@ -22,3 +22,14 @@
 <router-outlet></router-outlet>
 
 <app-home></app-home>
+
+<div *ngIf="isVisible">
+  <app-child #child [name]="name">
+    <p #content>visible = {{ isVisible }}</p>
+  </app-child>
+</div>
+
+<input type="text" [(ngModel)]="name" />
+<button type="button" (click)="isVisible = !isVisible">
+  Toogle Destroy / OnInit
+</button>

@@ -40,6 +40,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterOutlet } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { HomeComponent } from './home/home.component';
     AlterBackgroundHandlerDirective,
     RxjsComponent,
     HomeComponent,
+    ChildComponent
   ],
   imports: [
     CommonModule,
@@ -80,6 +82,7 @@ import { HomeComponent } from './home/home.component';
     DataTablesModule,
     AppRoutingModule,
     RouterOutlet,
+    
   ],
   providers: [UpperCasePipe, CurrencyPipe, HttpClient],
   bootstrap: [AppComponent],
