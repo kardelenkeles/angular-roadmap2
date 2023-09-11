@@ -43,6 +43,9 @@ import {HomeComponent} from './home/home.component';
 import {ChildComponent} from './child/child.component';
 import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
+import { CardComponent } from './card/card.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { ConfirmComponent } from './confirm/confirm.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +68,10 @@ import { AdminComponent } from './admin/admin.component';
     HomeComponent,
     ChildComponent,
     LoginComponent,
-    AdminComponent
+    AdminComponent,
+    CardComponent,
+    CheckoutComponent,
+    ConfirmComponent
   ],
   imports: [
     CommonModule,

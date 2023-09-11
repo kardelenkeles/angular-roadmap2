@@ -12,6 +12,7 @@ const routes: Routes = [
   {path: 'ngxs', component: NgxsFormComponent},
   {path: 'login', component: LoginComponent},
   {path: 'admin', component: AdminComponent , canActivate: [LoginGuard]},
+  { path: 'shop', loadChildren: () => import('./shop/shop.module').then(m => m.ShopModule) },
 ]
 
 @NgModule({
