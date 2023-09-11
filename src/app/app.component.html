@@ -43,3 +43,13 @@
     </select>
   </label>
 </div>
+
+<ng-container *transloco='let t'>
+  {{ t('containers') }}
+</ng-container>
+
+<br>
+
+<ng-container *transloco='let t; lang: "ru"'>
+  {{ t('containers') }}
+</ng-container>

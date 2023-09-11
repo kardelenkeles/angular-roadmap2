@@ -48,6 +48,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { ConfirmComponent } from './confirm/confirm.component';
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+import { TranslocoRootModule } from './transloco-root.module';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -103,7 +104,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    TranslocoRootModule
 
 
   ],
